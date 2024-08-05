@@ -8,7 +8,7 @@ describe('Login Page Testing', () => {
        cy.get('[name="et_pb_contact_captcha_2"]').type("8")
        cy.get("[type='submit']").eq(4).click()
     });
-    it.only('class should not be exist', () => {
+    it('class should not be exist', () => {
         cy.viewport("iphone-x")
         cy.visit("https://ultimateqa.com/complicated-page") 
         cy.get("#et_pb_contact_name_2").should('exist')
